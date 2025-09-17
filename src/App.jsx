@@ -1,4 +1,4 @@
-import "./App.css";
+/*import "./App.css";
 import { Boton } from "./components/Boton";
 import { Item1 } from "./components/Item1";
 import { Item2 } from "./components/Item2";
@@ -35,4 +35,25 @@ function App() {
   );
 }
 
+export default App;*/
+
+import "./App.css";
+import { Boton } from "./components/Boton";
+import { Header } from "./components/Header/Header";
+import { Footer } from "./components/Footer/Footer";
+import { Form } from "./components/Form/Form";
+
+function App() {
+  //const prod = { nombre: "Remera", precio: 10000, descripcion: "LALALA" };
+  return (
+    <>
+      <div>
+        <Header />
+        <Boton color={"green"} texto={"Saludar"} />
+        <Form />
+        <Footer />
+      </div>
+    </>
+  );
+}
 export default App;
